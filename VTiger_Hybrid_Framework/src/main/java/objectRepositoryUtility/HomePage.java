@@ -54,6 +54,13 @@ public class HomePage {
 
 	@FindBy(linkText = "Dashboard")
 	private WebElement dashboardLink;
+	
+	@FindBy(xpath="//input[@class='searchBox']")
+	private WebElement searchBoxTextfeild;
+
+	public WebElement getSearchBoxTextfeild() {
+		return searchBoxTextfeild;
+	}
 
 	public WebElement getLeadsLink() {
 		return leadsLink;
